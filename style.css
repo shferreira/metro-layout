@@ -1,0 +1,266 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10pt;
+  color: #666253;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none; }
+  body a {
+    color: inherit;
+    text-decoration: none; }
+    body a:hover {
+      color: #f73200; }
+  body > div {
+    position: absolute;
+    height: auto;
+    bottom: 0px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #d0dad0;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e2ad77), color-stop(1, #d0dad0));
+    background-image: -webkit-linear-gradient(top, #e2ad77, #d0dad0);
+    background-image: -moz-linear-gradient(top, #e2ad77, #d0dad0);
+    background-image: -ms-linear-gradient(top, #e2ad77, #d0dad0);
+    background-image: -o-linear-gradient(top, #e2ad77, #d0dad0);
+    background-image: linear-gradient(top, bottom, #e2ad77, #d0dad0);
+    overflow: hidden; }
+    body > div > nav {
+      display: none;
+      position: absolute;
+      bottom: 0px;
+      left: 50px; }
+    body > div > aside {
+      display: none;
+      position: absolute;
+      color: #8d887a;
+      bottom: 0px;
+      right: 50px; }
+      body > div > aside .notification {
+        display: inline-block; }
+        body > div > aside .notification .author {
+          font-weight: 900; }
+          body > div > aside .notification .author:after {
+            content: ":"; }
+        body > div > aside .notification .close {
+          margin: 2px;
+          font-size: 20px; }
+      body > div > aside .range {
+        display: inline-block;
+        margin: 5px;
+        height: 18px;
+        width: 100px;
+        overflow: hidden; }
+        body > div > aside .range input[type='range'] {
+          display: inline-block;
+          height: 17px;
+          width: 100px;
+          background-color: #f73200;
+          -webkit-appearance: none !important;
+          -moz-appearance: none !important;
+          -o-appearance: none !important;
+          appearance: none !important; }
+          body > div > aside .range input[type='range']::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            color: #666253;
+            background-color: #666253;
+            height: 17px;
+            width: 2px; }
+            body > div > aside .range input[type='range']::-webkit-slider-thumb:after {
+              content: "\00a0";
+              display: inline-block;
+              height: 17px;
+              width: 100px;
+              background-color: #666253; }
+      body > div > aside time {
+        display: inline-block;
+        margin: 5px;
+        font-weight: 100;
+        letter-spacing: -2px;
+        font-size: 25px; }
+      body > div > aside date {
+        margin-left: 10px;
+        display: inline-block;
+        text-align: right;
+        font-weight: 900;
+        letter-spacing: -1px;
+        font-size: 10px;
+        text-transform: uppercase; }
+        body > div > aside date span {
+          display: inline;
+          margin: -2px; }
+      body > div > aside .day {
+        font-weight: 100;
+        letter-spacing: -2px;
+        font-size: 25px; }
+    body > div > nav > a, body > div > aside > a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      border: solid 1px rgba(0, 0, 0, 0); }
+      body > div > nav > a:hover, body > div > aside > a:hover {
+        background: #fdfbfa !important;
+        border-top: solid 1px #dfcdba;
+        border-left: solid 1px #dfcdba;
+        border-right: solid 1px #dfcdba; }
+        body > div > nav > a:hover img, body > div > aside > a:hover img {
+          opacity: 1; }
+      body > div > nav > a.active, body > div > aside > a.active {
+        border-bottom: solid 1px #f73200; }
+        body > div > nav > a.active img, body > div > aside > a.active img {
+          opacity: 1; }
+      body > div > nav > a img, body > div > aside > a img {
+        margin: 9px 9px 0px 9px;
+        width: 22px;
+        height: 22px;
+        opacity: 0.5; }
+    body > div > section {
+      position: absolute;
+      min-width: 250px;
+      min-height: 200px;
+      z-index: 0;
+      background: rgba(253, 251, 249, 0.7);
+      -moz-box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
+      -webkit-box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5); }
+      body > div > section.focus {
+        background: #fdfbf9; }
+      body > div > section.skype {
+        top: 100px;
+        left: 740px;
+        height: 400px; }
+      body > div > section.internet {
+        top: 20px;
+        left: 140px;
+        width: 800px;
+        height: 500px; }
+        body > div > section.internet nav input {
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: 10px;
+          padding: 5px;
+          border: solid 1px #666253;
+          font-family: Gill Sans, Segoe UI, Helvetica, Arial, sans-serif;
+          font-weight: 100;
+          font-size: 16px; }
+        body > div > section.internet article {
+          position: absolute;
+          top: 95px;
+          left: 0px;
+          right: 0px;
+          bottom: 0px;
+          overflow: hidden; }
+          body > div > section.internet article iframe {
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+            border: 0px; }
+      body > div > section.explorer {
+        top: 80px;
+        left: 60px;
+        width: 640px;
+        height: 400px; }
+        body > div > section.explorer article {
+          padding: 10px; }
+          body > div > section.explorer article span {
+            position: relative;
+            display: inline-block;
+            height: 50px;
+            width: 80px;
+            margin: 10px;
+            border: solid 3px #fdfbfa;
+            -moz-box-shadow: 0px 0px 10px rgba(0, 0, 100, 0.2);
+            -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 100, 0.2);
+            box-shadow: 0px 0px 10px rgba(0, 0, 100, 0.2);
+            overflow: hidden; }
+            body > div > section.explorer article span img {
+              position: absolute;
+              right: 0px;
+              bottom: 0px; }
+      body > div > section > header {
+        display: block;
+        height: 60px;
+        margin: 0px auto;
+        padding-left: 10px;
+        padding-right: 10px; }
+        body > div > section > header div {
+          color: #666253;
+          height: 25px;
+          padding: 20px 10px 10px 10px; }
+          body > div > section > header div a img {
+            width: 18px;
+            height: 18px;
+            margin-left: 5px;
+            opacity: 0.6; }
+          body > div > section > header div a:hover img {
+            opacity: 1; }
+        body > div > section > header .toolbar {
+          float: left;
+          border-right: solid 1px #b3b1b0;
+          padding: 20px 10px 10px 20px; }
+        body > div > section > header .breadcrumb {
+          float: left;
+          padding: 23px 10px 10px 10px; }
+          body > div > section > header .breadcrumb a {
+            padding: 2px;
+            font-size: 11px;
+            font-weight: 500; }
+        body > div > section > header .controls {
+          float: right;
+          font-size: 20px;
+          padding: 18px 20px 10px 10px; }
+        body > div > section > header .options {
+          float: right;
+          border-right: solid 1px #b3b1b0; }
+      body > div > section > nav {
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        right: 0px;
+        height: 50px; }
+      body > div > section > aside {
+        position: absolute;
+        bottom: 0px;
+        top: 50px;
+        left: 0px;
+        width: 180px;
+        overflow: scroll;
+        padding: 20px 0px 0px 30px; }
+        body > div > section > aside h1 {
+          font-family: Gill Sans, Segoe UI, Helvetica, Arial, sans-serif;
+          font-weight: 100;
+          font-size: 22px;
+          padding: 2px;
+          margin: 2px;
+          color: #b3b1b0; }
+          body > div > section > aside h1.active {
+            color: #666253; }
+        body > div > section > aside h2 {
+          font-family: Gill Sans, Segoe UI, Helvetica, Arial, sans-serif;
+          font-weight: 100;
+          font-size: 16px;
+          padding: 2px;
+          margin: 2px; }
+      body > div > section > article {
+        position: absolute;
+        bottom: 0px;
+        top: 50px;
+        right: 0px;
+        left: 180px;
+        overflow: scroll; }
+        body > div > section > article::-webkit-scrollbar {
+          width: 4px;
+          height: 4px; }
+        body > div > section > article::-webkit-scrollbar-thumb:vertical {
+          background-color: #f73200; }
+        body > div > section > article::-webkit-scrollbar-thumb:horizontal {
+          background-color: #f73200; }
+      body > div > section > footer {
+        position: absolute;
+        border-top: dotted 1px #b3b1b0;
+        height: 50px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px; }
