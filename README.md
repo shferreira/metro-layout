@@ -3,7 +3,7 @@ Metro Concept
 
 HTML version of Sputnik8's Windows 8 Redesign
 
-Live demo @ http://shf.github.io/metro_concept/
+Live demo @ http://shferreira.github.io/metro_concept/
 
 ------
 
