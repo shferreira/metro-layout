@@ -35,7 +35,7 @@ $(function() {
   });
 
   // Load images from Flickr
-  $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?", { format: "json" }, function(data) {
+  $.getJSON("//api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?", { format: "json" }, function(data) {
     $.each(data.items, function(i, item) {
       var span = $("<span/>");
       $("<img/>").attr("src", item.media.m).appendTo(span);
